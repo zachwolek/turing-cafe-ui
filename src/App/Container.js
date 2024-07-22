@@ -1,4 +1,5 @@
 import { Card } from './Card'
+import './Container.css'
 
 export const Container = ({reservations}) => {
 const reservationCards = reservations.map(reservation => {
