@@ -3,7 +3,7 @@ import React from 'react';
 import { useState, useEffect } from 'react'
 import { Form } from './Form'
 import { Container } from './Container'
-import { getReservations } from './APICalls';
+import { getReservations, postReservation } from './APICalls';
 
 function App() {
   const [reservations, setReservations] = useState([])
@@ -15,8 +15,13 @@ function App() {
   }, [])
 
   function addReservation(newReservation){
-    console.log("NEW RESERVATION ON APP", newReservation)
-    setReservations([...reservations, newReservation])
+    // console.log("NEW RESERVATION ON APP", newReservation)
+    // postReservation(newReservation)
+    // .then((reservation) => {
+    //   console.log("NEW RESERVATION: ", reservation)
+      setReservations([...reservations, newReservation])
+      // getReservations()
+    
   }
 
   return (

@@ -5,6 +5,7 @@ export const Container = ({reservations}) => {
 const reservationCards = reservations.map(reservation => {
     return (
         <Card 
+        key={reservation.id}
         id={reservation.id}
         name={reservation.name}
         date={reservation.date}
