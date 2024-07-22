@@ -59,6 +59,7 @@ export const Form = ({addReservation}) => {
                  onChange={event => setNumber(event.target.value)}
             />
             <button
+                className='submit'
                 onClick = {event => submitReservation(event)}
             >Make Reservation
             </button>
